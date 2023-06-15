@@ -9,15 +9,17 @@ A new dataset which contains over 100M Chinese image-text pairs will also be rel
 
 We provide three pre-trained models:
 
-[pretrained_4m.pth](): TEAM with ViT-B/16 (initialized by [DeiT-base](https://dl.fbaipublicfiles.com/deit/deit_base_patch16_224-b5f2ef4d.pth)) as image encoder, pre-trained on 4 millions of image-text pairs.
+pretrained_4m.pth: TEAM with ViT-B/16 (initialized by [DeiT-base](https://dl.fbaipublicfiles.com/deit/deit_base_patch16_224-b5f2ef4d.pth)) as image encoder, pre-trained on 4 millions of image-text pairs.
 
-[pretrained_14m_clip_large.pth](): TEAM with ViT-L/14 (initialized by [CLIP-L/14](https://openaipublic.azureedge.net/clip/models/b8cca3fd41ae0c99ba7e8951adf17d267cdb84cd88be6f7c2e0eca1737a03836/ViT-L-14.pt)) as image encoder, pre-trained on 14 millions of image-text pairs.
+pretrained_14m_clip_large.pth: TEAM with ViT-L/14 (initialized by [CLIP-L/14](https://openaipublic.azureedge.net/clip/models/b8cca3fd41ae0c99ba7e8951adf17d267cdb84cd88be6f7c2e0eca1737a03836/ViT-L-14.pt)) as image encoder, pre-trained on 14 millions of image-text pairs.
+
+Both of them can be found [here](https://drive.google.com/drive/folders/1OynBsdlLGIY_Fue-6Qv86Rx7uo92KJBf?usp=sharing)
 
 Besides, we also release TEAM trained on our collected Chinese image-text dataset, please refere to [TEAM图文检索模型-中文-large](https://modelscope.cn/models/damo/multi-modal_team-vit-large-patch14_multi-modal-similarity/summary) for more details.
 
 ## Evaluation
 
-To evaluate the [pretrained_14m_clip_large.pth]() on COCO Retrieval task, you can run:
+To evaluate the pretrained_14m_clip_large.pth on COCO Retrieval task, you can run:
 ```shell
 python -m eval configs/pretrain_5m/team_clipl14.py
 ```
