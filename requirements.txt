@@ -1,0 +1,7 @@
+transformers==4.10.3
+Pillow-SIMD==7.0.0.post3
+PyYAML
+timm==0.4.9
+decord
+einops
+ftfy
